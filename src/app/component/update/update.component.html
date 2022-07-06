@@ -1,0 +1,39 @@
+<div class="container">
+    <h3>Ordering Form</h3>
+<hr>
+  <form [formGroup] ="insert" (ngSubmit) = "submit()">
+    <label for="fname">First_name</label>
+    <input type="text" formControlName="first_name" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last_name</label>
+    <input type="text" formControlName="last_name" id="lname" name="lastname" placeholder="Your last name..">
+    
+
+      <label for="phoneno">Phone_number</label>
+    <input type="text" formControlName="phone-number" id="phone" name="phonenumber" placeholder="Your Phone number..">
+
+    <label for="city">City </label>
+    <input type="text"  formControlName="city" id="city" name="city" placeholder="Your city..">
+
+    <label for="country">Flowers</label>
+    <select  formControlName= "flowers" id="country" name="country">
+        <option>red roses</option>
+        <option>yellow roses</option>
+        <option>white roses</option>
+        <option>bouquet</option>
+    </select>
+
+    <label for="country">Gift</label>
+    <select formControlName="gift" id="country" name="country">
+        <option>wedding</option>
+        <option>birthday</option>
+        <option>office</option>
+        <option>chocolate</option>
+    </select>
+
+   
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<router-outlet></router-outlet>

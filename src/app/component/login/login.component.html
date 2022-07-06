@@ -1,0 +1,16 @@
+
+<div class="container">
+  <h3>Log In Form</h3>
+<hr>
+<form >
+  <label for="fname">User_name:</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+  <label for="lname">Password:</label>
+  <input type="password" name="lastname" placeholder="Your password..">
+
+
+  <input [routerLink]="['/navbar']" type="submit" value="Log In">
+</form>
+</div>
+<router-outlet></router-outlet>

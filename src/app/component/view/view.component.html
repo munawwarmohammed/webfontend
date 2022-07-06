@@ -1,0 +1,30 @@
+<h2>Customer Order</h2>
+
+<table>
+    <tr>
+        <th>Id</th>
+      <th>First_name</th>
+      <th>Last_name</th>
+      <th>Phone_number</th>
+      <th>City </th>
+      <th>Flowers</th>
+      <th>Gift</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let x of customers">
+      <td> {{x.id}}</td>
+      <td> {{x.first_name}}</td>
+      <td> {{x.last_name}}</td>
+      <td> {{x.phone_number}}</td>
+      <td> {{x.city}}</td>
+      <td> {{x.flowers}}</td>
+      <td> {{x.gift}}</td>
+        <td>
+        <button (click)="update(x.id)" class="btn-btn-primary">update</button>
+        <button (click)="delete(x.id)" class="btn-btn-danger">Delete</button>
+      </td>
+    </tr>
+    
+  </table>
+  
+<router-outlet></router-outlet>
